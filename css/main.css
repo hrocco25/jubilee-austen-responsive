@@ -104,9 +104,8 @@ html{
   font-size: 16px;
 }
 
-body{
- margin: 0 5%;
-
+header, #about, #skills, #contact{
+  padding: 5%;
 }
 
 h1, h2, h3, h4{
@@ -163,17 +162,66 @@ header .divider {
 
 /*-----about------*/
 
+#about{
+  margin: 0 0 0 5%;
+}
+
 
 /*----skills-----*/
 
 #skills{
   background: #f9ceb7;
+  padding: 5%;
+  margin: 0 0 0 5%;
+}
+
+
+
+.skill-one, .skill-two, .skill-three{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  
+}
+
+#skills img{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+#skills p{
+  text-align: center;
 }
 
 /*----contact----*/
 
 #contact{
   background: #ebebeb;
+}
+
+.email, .social-media{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.contact-img img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75%;
+  margin: 0 0 0 15%;
+}
+
+#contact ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 
