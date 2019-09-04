@@ -123,7 +123,16 @@ header{
   background-image: url("../img/hero.png");
   min-height: 275px;
   background-size: cover;
+  padding: 0;
   
+}
+
+header h1{
+  color: #9b9b9b;
+}
+
+header span{
+  color:black;
 }
 
 header h3{
@@ -131,12 +140,14 @@ header h3{
   justify-content: center;
   margin: 0;
   padding: 2.5% 0 0 0;
+  color: #bbc085;
 }
 
 header nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 header ul{
   display: flex;
@@ -149,7 +160,7 @@ header ul{
 
 header li a{
   text-decoration: none;
-  color: grey;
+  color: #9b9b9b;
 }
 
 header .divider {
@@ -162,8 +173,11 @@ header .divider {
 
 /*-----about------*/
 
-#about{
-  margin: 0 0 0 5%;
+
+
+#about p{
+  color: #9b9b9b;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -172,7 +186,7 @@ header .divider {
 #skills{
   background: #f9ceb7;
   padding: 5%;
-  margin: 0 0 0 5%;
+  
 }
 
 
@@ -189,6 +203,10 @@ header .divider {
   display: flex;
   justify-content: center;
   width: 30%;
+}
+
+#skills h3{
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #skills p{
@@ -208,6 +226,10 @@ header .divider {
   flex-flow: column wrap;
 }
 
+.social-media{
+  margin: 10% 0 0 0;
+}
+
 .contact-img img{
   display: flex;
   justify-content: center;
@@ -222,6 +244,30 @@ header .divider {
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+#contact h2, h3, address, a{
+  margin: 0;
+}
+
+.email{
+  margin: 5% 0 0 0;
+}
+
+#contact h3, address{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#contact a{
+  text-decoration: none;
+  color: #c49075;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#contact a img{
+  max-width: 80%;
 }
 
 
