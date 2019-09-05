@@ -121,22 +121,17 @@ li{
 
 header{
   background-image: url("../img/hero.png");
-  min-height: 275px;
+  min-height: 278px;
   background-size: cover;
   padding: 0;
   
-}
-
-header h1{
-  color: #9b9b9b;
-  padding: 0 2.5%;
 }
 
 header span{
   color:black;
 }
 
-header h3{
+header .top h3{
   display: flex;
   justify-content: center;
   margin: 0;
@@ -144,7 +139,7 @@ header h3{
   color: #bbc085;
 }
 
-header nav{
+header .top nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +159,7 @@ header li a{
   color: #9b9b9b;
 }
 
-header .divider {
+header .top .divider {
   width: 100%;
   height: .05em;
   margin: 5% 0;
@@ -172,6 +167,10 @@ header .divider {
   
 }
 
+header h1{
+  margin: 2.5%;
+  color: #9b9b9b;
+}
 /*-----about------*/
 
 
@@ -373,6 +372,85 @@ header .divider {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+
+@media only screen and (min-width: 768px){
+  /*Tablet style here*/
+
+  /*header*/
+
+  header {
+    min-height: 400px;
+  }
+
+  header .top h3{    
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 1.5em;
+  }
+
+  header .top nav{
+    font-size: 1.1em;
+    width: 30%;
+  }
+
+  header .top .divider {
+    width: 0;
+    margin: 0;
+    height: 0em;    
+  }
+
+  header .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 3%;
+  }
+
+  header h1{
+    font-size: 3.5em;
+  }
+ 
+  /*skills*/
+
+  #skills{
+    display: flex;
+    align-items: flex-start;
+    
+  }
+
+  .skill-one, .skill-two, .skill-three{
+    width: 31.66%;
+    text-align: center;
+  }
+
+  .skill-two{
+    margin: 0 2.5%;
+  }
+
+  /*---contact---*/
+
+  #contact{
+    display: flex;
+  }
+
+  .contact-img, .email-social-media{
+    width: 50%;
+  }
+
+  
+
+
+
+ 
+
+}
+
+@media only screen and (min-width: 1200px){
+
+
+
+
 }
 
 @media print,
