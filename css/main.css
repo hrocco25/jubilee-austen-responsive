@@ -104,6 +104,10 @@ html{
   font-size: 16px;
 }
 
+.content-wrapper{
+  margin: 0 4%;
+}
+
 header, #about, #skills, #contact{
   padding: 5%;
 }
@@ -376,7 +380,28 @@ header h1{
 
 
 @media only screen and (min-width: 768px){
-  /*Tablet style here*/
+  /*Tablet style*/
+
+  /*general styles table*/
+
+ 
+
+
+  h1{
+    font-size: 3.5em;
+  }
+
+  h2{
+    font-size: 1.8em;
+  }
+
+  h3{
+    font-size: 1.5em;
+  }
+
+  p{
+    font-size: 1.3em;
+  }
 
   /*header*/
 
@@ -387,7 +412,7 @@ header h1{
   header .top h3{    
     justify-content: flex-start;
     padding: 0;
-    font-size: 1.5em;
+    
   }
 
   header .top nav{
@@ -407,13 +432,23 @@ header h1{
     padding: 5% 3%;
   }
 
-  header h1{
-    font-size: 3.5em;
+  /*about*/
+
+  #about{
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  
  
   /*skills*/
 
   #skills{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #skills .content-wrapper{
     display: flex;
     align-items: flex-start;
     
@@ -430,8 +465,13 @@ header h1{
 
   /*---contact---*/
 
-  #contact{
+  #contact .content-wrapper{
     display: flex;
+  }
+
+  #contact{
+    padding-left: 0;
+    padding-left: 0;
   }
 
   .contact-img, .email-social-media{
@@ -439,14 +479,55 @@ header h1{
   }
 
   
-
-
-
- 
-
 }
 
 @media only screen and (min-width: 1200px){
+  /*---desktop--*/
+
+  /*--genearl style--*/  
+
+  .content-wrapper{
+    padding: 0 10%;
+  }
+
+
+  h1{
+    font-size: 4.7em;
+  }
+
+  h2{
+    font-size: 2.5em
+  }
+
+  h3{
+    font-size: 2.2em;
+  }
+
+  p{
+    font-size: 1.7em;
+  }
+
+  /*--header---*/
+
+  header{
+    min-height: 950px;
+  }  
+
+  header .top nav{
+    font-size: 1.7em;
+  }
+
+  /*--about--*/
+
+  .about-p{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-p p{
+    width: 45%;
+    
+  }
 
 
 
